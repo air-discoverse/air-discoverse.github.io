@@ -318,11 +318,13 @@
     <!-- Overview -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered"><b>DISCOVERSE</b> System Architecture</h2>
+        <h2 class="title is-3 has-text-centered">System Overview</h2>
         <image src="static/images/overview.jpg" width=100% style="display: block; margin: auto;"></image>
-        <!-- <p>
-          <b>DISCOVERSE</b> Real-to-Sim Pipeline.
-        </p> -->
+        <p>
+          DISCOVERSE unifies real-world captures, 3D AIGC, and any existing 3D assets in formats of 3DGS (.ply), mesh (.obj/.stl), and MJCF physical models (.xml), enabling their use as interactive scene nodes (objects and robots) or the background node. 
+          We leverage Gaussian splatting as our rendering engine to generate hyper-realistic radiance field rendering of multiple sensor modalities and use MuJoCo as the physical engine to ensure accurate physics.
+          Benefiting from the efficiency and fidelity, DISCOVERSE empowers large-scale robot learning, efficient data synthesis, and a variety of complex robotic benchmarks.
+        </p>
       </div>
     </div>
     <!-- Overview -->
@@ -352,15 +354,16 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Massively Paralleled Neural Rendering</h2>
+        <h2 class="title is-3 has-text-centered">Massive Parallelization</h2>
         <video id="teaser" autoplay muted loop playsinline height="100%">
           <source src="./static/videos/parallel_new.mp4"
                   type="video/mp4">
         </video>
         <p>
-          <b>DISCOVERSE</b> supports paralleled neural rendering, with a total of <b>650FPS</b> for 5 cameras 
-          rendering 640x480 hyper-realistic RGB-D frames on an Nvidia 6000Ada, and a total of <b>240FPS</b> for the same setup 
-          on an Nvidia 3060 laptop.
+          DISCOVERSE achieves a total of 650 FPS for rendering hyper-realistic RGB-D frames at 640x480 resolution with 5 cameras on a desktop with Ubuntu 20.04, 
+          on 3.1 GHz Intel Xeon w5-3435x CPU and an Nvidia 6000 Ada GPU, 
+          and achieves 240 FPS with the same setup on a laptop with Ubuntu 20.04, on 3.2 GHz AMD R7-5800H CPU 
+          and an Nvidia GeForce RTX 3060 GPU.
         </p>
       </div>
     </div>
@@ -372,13 +375,13 @@
     <!-- Real2Sim -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">High-Fidelity Real2Sim Generation</h2>
+        <h2 class="title is-3 has-text-centered">Real2Sim Generation Pipeline</h2>
         <image src="static/images/real2sim.jpg" width=100% style="display: block; margin: auto;"></image>
         <div class="content has-text-justified">
           <p>
-            <b>DISCOVERSE</b> uses 3DGS as a unified visual representation and 
-            integrates laser scanning, state-of-the-art generative models, and physically-based rendering techniques 
-            to boost the geometry and appearance fidelity of the reconstructed radiance fields.
+            DISCOVERSE uses 3DGS as a universal visual representation and integrate laser scanning, 
+            state-of-the-art generative models, and physically-based relighting to boost the geometry and appearance fidelity 
+            of the reconstructed radiance fields.
           </p>
         </div>
       </div>
@@ -398,7 +401,7 @@
                   type="video/mp4">
         </video>
         <p>
-          An AIRBOT Play robotic arm performing four different manipulation tasks in <b>DISCOVERSE</b>. The video plays at normal speed (1x).
+          DISCOVERSE enables zero-shot transfer of contact-rich real-world manipulation tasks. The video plays at normal speed (1x).
         </p>
       </div>
     </div>
