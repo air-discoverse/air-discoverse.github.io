@@ -298,14 +298,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present DISCOVERSE, the first unified, modular, open-source 3DGS-based simulation framework for 
-            Real2Sim2Real robot learning. It features a holistic Real2Sim pipeline that synthesizes hyper-realistic geometry 
+            We present DISCOVERSE, the first unified, modular, open-source 3DGS-based simulation framework 
+            for Real2Sim2Real robot learning. It features a holistic Real2Sim pipeline that synthesizes hyper-realistic geometry 
             and appearance of complex real-world scenarios, paving the way for analyzing and bridging the Sim2Real gap. 
             Powered by Gaussian Splatting and MuJoCo, DISCOVERSE enables massively parallel simulation of multiple sensor modalities 
             and accurate physics, with inclusive supports for existing 3D assets, robot models, and ROS plugins, 
-            empowering large-scale robot learning, efficient data synthesis, and complex robotic benchmarks. 
-            Through extensive experiments on imitation learning, DISCOVERSE demonstrates state-of-the-art zero-shot Sim2Real transfer 
-            performance compared to existing simulators.
+            empowering large-scale robot learning and complex robotic benchmarks. Through extensive experiments on imitation learning, 
+            DISCOVERSE demonstrates state-of-the-art zero-shot Sim2Real transfer performance compared to existing simulators.
           </p>
         </div>
       </div>
@@ -382,59 +381,6 @@
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Real2Sim -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Real2Sim Generation Pipeline</h2>
-        <image src="static/images/real2sim.jpg" width=100% style="display: block; margin: auto;"></image>
-        <div class="content has-text-justified">
-          <p>
-            DISCOVERSE uses 3DGS as a universal visual representation and integrate laser scanning, 
-            state-of-the-art generative models, and physically-based relighting to boost the geometry and appearance fidelity 
-            of the reconstructed radiance fields.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Real2Sim -->
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Viewpoint Gen. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">State-of-the-art Sim2Real Performance</h2>
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/sim2real.mp4"
-                  type="video/mp4">
-        </video>
-        <p>
-          DISCOVERSE enables zero-shot transfer of contact-rich real-world manipulation tasks. The video plays at normal speed (1x).
-        </p>
-      </div>
-    </div>
-    <!-- Viewpoint Gen. -->
-  </div>
-</section>
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3 has-text-centered">Viewpoints Generalization</h2>
-        <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="./static/videos/viewgen.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -549,6 +495,59 @@
 
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Real2Sim -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Real2Sim Generation Pipeline</h2>
+        <image src="static/images/real2sim.jpg" width=100% style="display: block; margin: auto;"></image>
+        <div class="content has-text-justified">
+          <p>
+            DISCOVERSE uses 3DGS as a universal visual representation and integrate laser scanning, 
+            state-of-the-art generative models, and physically-based relighting to boost the geometry and appearance fidelity 
+            of the reconstructed radiance fields.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Real2Sim -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Viewpoint Gen. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">State-of-the-art Sim2Real Performance</h2>
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/sim2real.mp4"
+                  type="video/mp4">
+        </video>
+        <p>
+          DISCOVERSE enables zero-shot transfer of contact-rich real-world manipulation tasks. The video plays at normal speed (1x).
+        </p>
+      </div>
+    </div>
+    <!-- Viewpoint Gen. -->
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Viewpoints Generalization</h2>
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/viewgen.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section> -->
 
 <section class="section">
   <div class="container is-max-desktop">
